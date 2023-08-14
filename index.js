@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Handle slash command
-app.post('/randomheadline', async (req, res) => {
+app.get('/randomheadline', async (req, res) => {
   try {
     // News API configuration
     const apiKey = '47a8b33a9db34017bd2bb6e3259c9ff8';
